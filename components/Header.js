@@ -1,14 +1,15 @@
 import Image from "next/image";
 import React from "react";
 import VidaSnap from "../src/app/images/vidasnaplogo.png";
-import { SearchIcon } from "@heroicons/react/outline";
+import { SearchIcon, PlusCircleIcon } from "@heroicons/react/outline";
+import { HomeIcon } from "@heroicons/react/solid";
 
 export default function Header() {
   return (
     <>
-      {/*Left*/}
-      <div className="flex items-center justify-between max-w-6xl">
-        <div className="cursor-pointer h-24 w-26 relative hidden lg:inline-grid">
+      <div className="flex items-center justify-between max-w-6xl mx-4 xl:mx-auto">
+        {/*Left*/}
+        <div className="cursor-pointer h-3 w-24 relative hidden lg:inline-grid">
           <Image
             width="200"
             height="80"
@@ -17,7 +18,7 @@ export default function Header() {
           />
         </div>
 
-        <div className="cursor-pointer h-24 w-10 relative lg:hidden">
+        <div className="cursor-pointer h-10 w-24 relative lg:hidden">
           <Image
             width="80"
             height="80"
@@ -37,7 +38,15 @@ export default function Header() {
           />
         </div>
         {/*Right*/}
-        <h1>Right side</h1>
+        <div className="flex space-x-4 items-center">
+          <HomeIcon className="hidden md:inline-flex h-6 cursor-pointer hover:scale-125 transition-transform duration-200 ease-out" />
+          <PlusCircleIcon className="h-6 cursor-pointer hover:scale-125 transition-transform duration-200 ease-out" />
+          <img
+            src="https://s2.glbimg.com/bidN4ro-uEHAEJABM4Jx2bRO31w=/0x0:600x900/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_ba3db981e6d14e54bb84be31c923b00c/internal_photos/bs/2021/s/E/X5IaJTRRS3AcI1TFPYSw/2019-11-06-gettyimages-501312488.jpg"
+            alt="Richar Gere"
+            className="h-10 rounded-full cursor-pointer"
+          />
+        </div>
       </div>
     </>
   );
