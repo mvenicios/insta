@@ -15,6 +15,7 @@ export default function Header() {
             height="80"
             src={VidaSnap}
             className="object-contain"
+            alt=""
           />
         </div>
 
@@ -24,6 +25,7 @@ export default function Header() {
             height="80"
             src="https://play-lh.googleusercontent.com/dmyJVZ5BKcOFM6XaZmTgZjtsHnvj3PqCaxTnuOSwu6HN7a7J3k_aR-023K01L_RTcsI=w600-h300-pc0xffffff-pd"
             className="object-contain"
+            alt=""
           />
         </div>
         {/*Middle*/}
