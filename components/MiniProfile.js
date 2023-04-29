@@ -9,6 +9,8 @@ export default function MiniProfile() {
       <div className="flex-1 ml-4">
         <h2 className="font-bold">maurosouza</h2>
         <h3 className="text-sm text-gray-400">Bem vindo ao VidaSnap</h3>
+      </div>
+      <div className="">
         <button className="font-semibold text-blue-400 text-sm">Sair</button>
       </div>
     </div>
